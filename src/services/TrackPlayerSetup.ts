@@ -1,12 +1,12 @@
 import TrackPlayer, {
   AppKilledPlaybackBehavior,
   Capability,
-} from 'react-native-track-player';
+} from "react-native-track-player";
 
 export async function setupPlayer() {
   let isSetup = false;
   try {
-    await TrackPlayer.getCurrentTrack();
+    await TrackPlayer.getActiveTrackIndex();
     isSetup = true;
   } catch {
     await TrackPlayer.setupPlayer();
@@ -15,11 +15,7 @@ export async function setupPlayer() {
         appKilledPlaybackBehavior:
           AppKilledPlaybackBehavior.StopPlaybackAndRemoveNotification,
       },
-      capabilities: [
-        Capability.Play,
-        Capability.Pause,
-        Capability.Stop,
-      ],
+      capabilities: [Capability.Play, Capability.Pause, Capability.Stop],
       compactCapabilities: [Capability.Play, Capability.Pause],
     });
 
