@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "797541384380",
+    "project_id": "radio-atos-c7775",
+    "storage_bucket": "radio-atos-c7775.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797541384380:android:cc2c4f2ef947cdb28b50b9",
+        "android_client_info": {
+          "package_name": "com.radio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuR29Ne5e2I65360cTG4FVtqAozgi0QrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
